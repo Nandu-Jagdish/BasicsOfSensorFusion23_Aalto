@@ -1,0 +1,17 @@
+{\sum_{n=1}^Nx_n^2} & {\sum_{n=1}^Nx_n}\\
+{\sum_{n=1}^Nx_n} & N
+\end{bmatrix} \]
+The inverse of a 2x2 matrix can be calculated as follows:
+If \[ A = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \]
+Then the inverse of A, denoted as \( A^{-1} \), is given by:
+\[ A^{-1} = \frac{1}{{ad - bc}} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix} \]
+In your case, for matrix A:
+\[ a = \sum_{n=1}^Nx_n^2 \]
+\[ b = \sum_{n=1}^Nx_n \]
+\[ c = \sum_{n=1}^Nx_n \]
+\[ d = N \]
+Now, let's calculate the inverse:
+\[ ad - bc = \left(\sum_{n=1}^Nx_n^2\right) \cdot N - \left(\sum_{n=1}^Nx_n\right) \cdot \left(\sum_{n=1}^Nx_n\right) \]
+With this value, we can compute the elements of the inverse matrix \( A^{-1} \):
+\[ A^{-1} = \frac{1}{{\left(\sum_{n=1}^Nx_n^2\right) \cdot N - \left(\sum_{n=1}^Nx_n\right) \cdot \left(\sum_{n=1}^Nx_n\right)}} \begin{bmatrix} N & -\sum_{n=1}^Nx_n \\ -\sum_{n=1}^Nx_n & \sum_{n=1}^Nx_n^2 \end{bmatrix} \]
+This is the inverse of the matrix you provided. If you'd like to simplify further, you can calculate the value in the denominator, but this is the general form of the inverse.
